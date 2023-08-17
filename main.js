@@ -2,8 +2,7 @@ const axios = require('axios');
 const { execSync } = require('child_process');
 
 // Set your server URL and API key here
-const SERVER_URL = 'https://your-appwrite-server.com/v1/collections/YOUR_COLLECTION_ID/documents';
-const API_KEY = 'YOUR_APPWRITE_API_KEY';
+const SERVER_URL = 'https://snuggler-server.onrender.com';
 
 // Function to execute shell commands
 const runCommand = (command) => {
@@ -24,11 +23,6 @@ const collectAndPushMessages = async () => {
             //     const data = {
             //         message: message.trim(),
             //         timestamp: Math.floor(Date.now() / 1000)
-            //     };
-
-            //     const headers = {
-            //         'Content-Type': 'application/json',
-            //         'X-Appwrite-API-Key': API_KEY
             //     };
 
             //     const response = await axios.post(SERVER_URL, data, { headers });
